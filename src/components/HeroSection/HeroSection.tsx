@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail, LinkIcon } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail, LinkIcon, CalendarCheck } from "lucide-react";
 import TechStackSection from "../TechStackSection/TechStackSection";
 import { Button } from "../lightswind/button";
 import { Badge } from "../lightswind/badge";
@@ -9,6 +9,7 @@ import { DotPattern } from "../lightswind/dot-pattern";
 import profileImg from "../../assets/aashir.jpg";
 
 const RESUME_URL = `${import.meta.env.BASE_URL}Aashir_Ali_Abbas_Resume.pdf`;
+const CALENDLY_URL = "https://calendly.com/aashir-ali-abbas";
 
 const socials = [
   { Icon: Github, href: "https://github.com/aashir-ali", label: "GitHub" },
@@ -76,7 +77,7 @@ export const HeroSection = () => {
             </div>
 
             <p className="mt-3 text-xl md:text-2xl font-semibold text-foreground/80">
-              Automation Engineer <span className="text-primary">&</span> Full-Stack Developer
+              AI Automation Engineer <span className="text-primary">·</span> Full-Stack PHP <span className="text-primary">·</span> GHL Expert
             </p>
           </motion.div>
 
@@ -86,9 +87,9 @@ export const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            I design and deploy enterprise automation systems with Zapier, Make, n8n and GoHighLevel — and build the
-            full-stack apps and integrations behind them. I turn manual, repetitive operations into reliable, scalable
-            workflows.
+            I design and deploy AI-powered automation with Zapier, Make, n8n and GoHighLevel, and build the full-stack
+            systems behind them in PHP, Laravel and CodeIgniter. Over 5+ years and 10+ clients on Upwork &amp; Fiverr,
+            I've turned manual, repetitive operations into reliable, scalable workflows.
           </motion.p>
 
           <motion.div
@@ -105,6 +106,11 @@ export const HeroSection = () => {
             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" download>
               <Button size="lg" variant="outline" className="rounded-full px-7 h-12 glass-panel text-foreground font-semibold flex items-center gap-2 hover:bg-foreground/10 transition-all hover:-translate-y-1 border-foreground/10">
                 Resume <Download className="w-4 h-4" />
+              </Button>
+            </a>
+            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="rounded-full px-7 h-12 glass-panel text-foreground font-semibold flex items-center gap-2 hover:bg-foreground/10 transition-all hover:-translate-y-1 border-foreground/10">
+                Book a Call <CalendarCheck className="w-4 h-4" />
               </Button>
             </a>
           </motion.div>
@@ -140,7 +146,7 @@ export const HeroSection = () => {
         >
           <HangingIdCard
             name="Aashir Ali Abbas"
-            role="Automation Engineer"
+            role="AI Automation Engineer"
             badgeId="AA-2025-DEV"
             accentColor="#8b5cf6"
             ropeLength={75}
@@ -170,7 +176,7 @@ export const HeroSection = () => {
                 <div>
                   <h3 className="text-xl font-extrabold tracking-tight text-foreground">Aashir Ali Abbas</h3>
                   <div className="inline-flex items-center gap-1.5 mt-1 px-3 py-0.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold">
-                    <span>Automation Engineer</span>
+                    <span>AI Automation Engineer</span>
                   </div>
                 </div>
 
@@ -180,7 +186,7 @@ export const HeroSection = () => {
                 <div className="grid grid-cols-2 gap-2.5 w-full text-left bg-muted/40 p-3 rounded-xl border border-border/50">
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">Specialty</span>
-                    <span className="font-bold text-foreground text-xs">Automation & Full-Stack</span>
+                    <span className="font-bold text-foreground text-xs">Automation · PHP · GHL</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">Location</span>

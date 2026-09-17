@@ -12,6 +12,7 @@ const technologies: Tech[] = [
   { name: "AI Agents" },
   { name: "PHP", icon: `${D}/php/php-original.svg` },
   { name: "Laravel", icon: `${D}/laravel/laravel-original.svg` },
+  { name: "CodeIgniter", icon: `${D}/codeigniter/codeigniter-plain.svg` },
   { name: "React", icon: `${D}/react/react-original.svg` },
   { name: "JavaScript", icon: `${D}/javascript/javascript-original.svg` },
   { name: "TypeScript", icon: `${D}/typescript/typescript-original.svg` },

@@ -21,7 +21,7 @@ export default function ProfessionalProfile() {
   const technicalSkills = [
     { name: "Zapier / Make / n8n", level: 95, icon: Workflow, color: "text-amber-400" },
     { name: "GoHighLevel (GHL) CRM", level: 92, icon: Boxes, color: "text-purple-400" },
-    { name: "PHP / Laravel", level: 90, icon: Server, color: "text-red-400" },
+    { name: "PHP / Laravel / CodeIgniter", level: 90, icon: Server, color: "text-red-400" },
     { name: "REST APIs & Webhooks", level: 90, icon: Braces, color: "text-sky-400" },
     { name: "React / JavaScript / TypeScript", level: 88, icon: Code2, color: "text-cyan-400" },
     { name: "AI Integration (Claude / GPT / Gemini)", level: 85, icon: Bot, color: "text-emerald-400" },

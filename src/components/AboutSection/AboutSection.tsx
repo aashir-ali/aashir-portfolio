@@ -26,12 +26,13 @@ export const AboutSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm an Automation Engineer and Full-Stack Developer with 5+ years of experience designing and deploying
               business automation across Zapier, Make, n8n and GoHighLevel. I combine deep workflow logic — webhooks,
-              API integrations, and multi-step conditional routing — with the engineering background in PHP/Laravel and
-              React to build the systems, CRMs, and integrations that keep operations running.
+              API integrations, and multi-step conditional routing — with the engineering background in PHP, Laravel, CodeIgniter and
+              React to build the systems, CRMs, websites and integrations that keep operations running.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mt-4">
               My focus is simple: eliminate repetitive work, connect the tools a business already uses, and deliver
-              automation that's accurate and dependable enough to run unattended.
+              automation that's accurate and dependable enough to run unattended. I've shipped work for 10+ clients
+              across government, logistics, healthcare, coaching and marketing on Upwork and Fiverr.
             </p>
           </div>
         </div>

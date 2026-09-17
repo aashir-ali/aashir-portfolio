@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Send, MapPin, Mail, Phone } from "lucide-react";
+import { Send, MapPin, Mail, Phone, CalendarCheck, Briefcase, Store, Linkedin, Github } from "lucide-react";
 import { Input } from "../lightswind/input";
 import { Textarea } from "../lightswind/textarea";
 import { Button } from "../lightswind/button";
@@ -9,6 +9,7 @@ const EMAIL = "engr.aashirabbas@gmail.com";
 const PHONE_DISPLAY = "+92 328 6598179";
 const PHONE_TEL = "+923286598179";
 const LOCATION = "Islamabad, Pakistan";
+const CALENDLY_URL = "https://calendly.com/aashir-ali-abbas";
 
 export const ContactSection = () => {
   const [name, setName] = useState("");
@@ -26,6 +27,13 @@ export const ContactSection = () => {
     { icon: Mail, label: EMAIL, href: `mailto:${EMAIL}` },
     { icon: Phone, label: PHONE_DISPLAY, href: `tel:${PHONE_TEL}` },
     { icon: MapPin, label: LOCATION, href: "#" },
+  ];
+
+  const platforms = [
+    { icon: Briefcase, label: "Upwork", href: "https://www.upwork.com/freelancers/~012efa5017a3d67acc" },
+    { icon: Store, label: "Fiverr", href: "https://www.fiverr.com/aashir_ali015" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/aashir-ali-abbas" },
+    { icon: Github, label: "GitHub", href: "https://github.com/aashir-ali" },
   ];
 
   return (
@@ -51,7 +59,7 @@ export const ContactSection = () => {
               </h2>
               <p className="text-muted-foreground">
                 Open to remote and contract automation and full-stack work. Have a process you'd like to automate or a
-                system to build? Send a note and I'll get back to you.
+                system to build? Send a note, book a call, or reach me on any platform below.
               </p>
             </div>
 
@@ -71,6 +79,37 @@ export const ContactSection = () => {
                   </a>
                 );
               })}
+            </div>
+
+            {/* Book a call CTA */}
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-primary/10 border border-primary/30 text-primary font-semibold hover:bg-primary/20 transition-all shadow-sm"
+            >
+              <CalendarCheck className="w-5 h-5" /> Book a 30-min call
+            </a>
+
+            {/* Platform links */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">Find me on</p>
+              <div className="flex flex-wrap gap-3">
+                {platforms.map((p) => {
+                  const Icon = p.icon;
+                  return (
+                    <a
+                      key={p.label}
+                      href={p.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass-panel border border-foreground/10 text-sm font-semibold text-foreground hover:text-primary hover:border-primary/40 transition-all shadow-sm"
+                    >
+                      <Icon className="w-4 h-4" /> {p.label}
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
 

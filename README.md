@@ -96,3 +96,13 @@ Automation Engineer résumé** (Adwater, Spark Digital, Canada Prime Marketing, 
 GlowLogix, Ecarobar), since it matches how the site positions you. If you'd rather show
 the Full-Stack résumé's history (DevMechanix, LeadConcept, …), edit
 `CareerSection/CareerTimeline.tsx`.
+
+## Project screenshots & links
+The Projects section shows **live screenshots** of each client site, generated automatically
+by WordPress mShots (`s.wordpress.com/mshots`). The first time a visitor loads the page a
+thumbnail may appear blank for a few seconds while it's generated, then it's cached. If a
+client site ever goes offline, just remove or swap that entry in
+`ProjectsSection/ProjectsSection.tsx`.
+
+Freelance & booking links (Upwork, Fiverr, Calendly) appear in the hero, contact section and
+footer — update the URLs in those component files if any change.

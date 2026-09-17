@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Link as LinkIcon, ArrowUp, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Link as LinkIcon, ArrowUp, Heart, Briefcase, Store, CalendarCheck } from "lucide-react";
 import { MorphingText } from "../lightswind/morphing-text";
 
 export const Footer = () => {
@@ -27,6 +27,9 @@ export const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/aashir-ali", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com/in/aashir-ali-abbas", label: "LinkedIn" },
+    { icon: Briefcase, href: "https://www.upwork.com/freelancers/~012efa5017a3d67acc", label: "Upwork" },
+    { icon: Store, href: "https://www.fiverr.com/aashir_ali015", label: "Fiverr" },
+    { icon: CalendarCheck, href: "https://calendly.com/aashir-ali-abbas", label: "Book a call" },
     { icon: LinkIcon, href: "https://linktr.ee/engr.aashirabbas", label: "Linktree" },
     { icon: Mail, href: "mailto:engr.aashirabbas@gmail.com", label: "Email" },
   ];
